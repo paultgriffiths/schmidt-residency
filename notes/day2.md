@@ -6,7 +6,6 @@
 -- Distinct from join which is on indices
 
 - Columns.str.contains('string_to_test_for')
-
 -- Can be used to create mask
 
 - Dropna and fillna
@@ -15,7 +14,6 @@
 Replace can use dictionary of keys(to find) and values to replace with
 
 - groupby('City') then count number of entry in names column per city
-
 -- groupby('city')["Name"].count()
 
 if you want something fancier
