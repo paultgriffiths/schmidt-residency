@@ -12,7 +12,8 @@ import numpy as np
 # %%
 import socket
 host = socket.gethostname()
-if host=='atm-bromium.local':
+print(host)
+if host=='ptg21.local':
     disk='/Users/ptg21/Github/schmidt-residency/projects/S1_BKK-AQ/'
 datapath = disk + '' #FIXME
 figpath = disk + '/figs/'
@@ -53,7 +54,7 @@ ax.xaxis.grid(True) # Show the vertical gridlines
 fig, ax = plt.subplots(figsize=(20,5))
 mm_02a_o3 = station_02a['O3'].groupby(by=pd.Grouper(freq="M"))
 mm_02a_o3.plot(ax=ax,lw=1)
-mm_02a_o3.aggregate({"O3":np.mean})['O3'].plot(ax=ax, lw=5, color='k')
+mm_02a_o3.aggregate(Mean=('O3', 'mean')).plot(ax=ax, lw=5, color='k')
 ax.set_xlim([datetime.date(2013, 7, 1), datetime.date(2016, 12, 30)])
 ax.set_xlabel('Local Time')
 ax.set_ylim(0,125)

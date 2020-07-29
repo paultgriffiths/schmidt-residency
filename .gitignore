@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+bkk_AQ/bkk_aq_df_raw_data/
 # Distribution / packaging
 .Python
 build/
@@ -129,3 +129,11 @@ dmypy.json
 .pyre/
 
 # VSCODE
+.vscode/
+*.zip
+cars_analysis-v1.0/
+ftse_analysis-v1.0/
+introduction_to_data_visualisation/
+introduction_to_pandas/
+*.feather
+*.pdf
