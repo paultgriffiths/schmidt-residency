@@ -1,6 +1,8 @@
-
-# extracted from http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
-# under public domain terms
+"""
+Module containing the bounding boxes for each country.
+Extracted from http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip under public domain
+terms.
+"""
 
 country_bounding_boxes = {
     'AF': ('Afghanistan', (60.5284298033, 29.318572496, 75.1580277851, 38.4862816432)),
